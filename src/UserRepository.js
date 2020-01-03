@@ -6,7 +6,6 @@ class UserRepository {
 
 	locateUserById(userId) {
 	  let currentUser = this.dataUser.filter(player => player.id === userId)
-		console.log(currentUser)
 	}
 
 	averageStepGoal() {
