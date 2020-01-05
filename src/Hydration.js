@@ -11,22 +11,27 @@ class Hydration {
 	}
 
 	findHydrationByDate(date) {
-	  let userRecords = this.hydroData.reduce((acc, record) => {
+	  let userRecords = this.hydroData.filter(record => record.userID === this.userID)
+	  let foundDate = userRecords.find(day => day.date === date)
+    return `${foundDate.numOunces} Ounces`
+	}
+
+  returnWeeklyHydration() {
+  	let weeklyHydroData = [];
+  	let userRecords = this.hydroData.reduce((acc, record) => {
 	  	if (record.userID === this.userID) {
 	  		acc = acc.concat(record)
 	  	}
 	  	return acc
-	  }, [])
+	  }, []).reverse().map(user => {
+    	if (weeklyHydroData.length < 7) {
+    		weeklyHydroData.push(user)
+    	}
+    })
+    return weeklyHydroData
+  }
 
-	  let foundDate = userRecords.filter(day => {
-	  	if (day.date === date) {
-	  		return day
-	  	}
-	  })
-    return `${foundDate[0].numOunces} Ounces`
-	}
-
-}
+};
 
 
 

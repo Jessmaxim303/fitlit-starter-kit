@@ -7,45 +7,45 @@
 	/*border: 1px solid red;*/
 }
 
-/*yellow: #faed26*/
-/*purple: #46344e*/
-/*grey: #5a5560*/
-/*grey/brown: #9D8D8F*/
-/*brown: #9b786f*/
+/*dark-grey: #212221*/
+/*blue: #1181b2*/
+/*light-blue: #ddedf4*/
+/*purple: #44449b*/
 
 .nav_section {
 	width: 100%;
-	height: 10vh;
-	background: #46344e;
-	color: #faed26;
+	height: 12vh;
+	background: #212221;
+	color: #1181b2;
 	font-family: 'Allerta Stencil', sans-serif;
 	font-size: 38px;
 	text-align: center;
-	padding: 8px 5% 2px 5%;
+	line-height: 33px;
+	padding: 8px;
+}
+
+.nav_text {
+	margin-top: 10px;
 }
 
 .main_body-section {
-	height: 72vh;
-	width: 100%;
-	background: #5a5560;
+	height: 83vh;
+	background: #ddedf4;
 	color: #9d8d8f;
-	padding: 5%;
 }
 
 footer {
 	height: 3vh;
 	width: 100%;
-  background: #9b786f;
-  padding: 0 5%;
+  background: #44449b;
 }
 
 .js_data-section {
 	padding: 1%;
-	width: 280px;
-	height: 140px;
-	background: #9D8D8F;
+	width: 350px;
+  /*height: 175px;*/
+	background: #1181b2;
 	font-size: 20px;
-	margin: 2%;
 	color: #faed26;
 	font-family: 'Allerta Stencil', sans-serif;
 	display: inline-block;
@@ -60,8 +60,34 @@ footer {
 	font-weight: bold;
 }
 
-.js_hydro-input {
-	width: 125px;
-	height: 45px;
-	border: 1px solid red;
+.js_hydro {
+	width: 95px;
+	height: 35px;
+	border-radius: 3px;
+	border: none;
+}
+
+.js_hydro-button {
+	background: #46344e;
+	color: #ffffff;
+}
+
+.body_card-section {
+	height: 94%;
+  width: 70%;
+  display: inline-block;
+  padding: 2%;
+}
+
+.friends_section {
+	background: #44449b;
+	float: right;
+	height: 100%;
+	width: 23%;
+}
+
+.nav_subtext {
+	font-size: 18px;
+	font-family: sans-serif;
+	color: #ffffff;
 }
